@@ -25,8 +25,9 @@ It Will be a great use for students, while listening to lectures they can find c
 * Chrome app
 
 #### ToDo
-- [ ]  Add More info url feature
-- [ ]  Add  Bit image feature
+- [ ] Add More info url feature
+- [ ] Add  Bit image feature
+- [ ] Add content attribution
 
 #### Directory structure
 * [/source](source/) - Contains the source code of the project
