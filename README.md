@@ -34,3 +34,7 @@ It Will be a great use for students, while listening to lectures they can find c
 
 #### Known limitation
 Currently the app is in testing phase so the post filtering and reviewing is turned off. That means any newly registered users can login as soon as he is registered, also the new bits will appear on the app as soon as it is posted. The filtering can be enabled once the app goes on production stage the server already have the attributes to support it.
+
+#### Thanks
+Special thanks to IEEE MadC organizers for giving me an opportunity to develop this app
+<img src="http://www.ieeer8.org/wp-content/uploads/2013/09/IEEEmadC_635x200-1.png" width="300"/>
