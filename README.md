@@ -1,5 +1,6 @@
 # <img src="source/www/img/72.fw.png" width="60px" />&nbsp;&nbsp;EduBits
 EduBits is a community powered platform to share knowledge. It is a mobile application which allows the user to search and find the concise definition of anything related to any field he want. Unlike a traditional website or a search engine, the EduBits will only display the minimal information that a user need to know about the search item. It will also display the image of that item, if it is available and also shows the most relevant URL to learn more about the item.
+
 [<img src="http://www.pokemonxandydownload.com/wp-content/uploads/2014/09/download-button.png" width="200px" />](dist/)
 
 #### What makes EduBits Different from search engine or dictionary:
