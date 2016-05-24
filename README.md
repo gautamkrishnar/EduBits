@@ -37,4 +37,5 @@ Currently the app is in testing phase so the post filtering and reviewing is tur
 
 #### Thanks
 Special thanks to IEEE MadC organizers for giving me an opportunity to develop this app
-<img src="http://www.ieeer8.org/wp-content/uploads/2013/09/IEEEmadC_635x200-1.png" width="300"/>
+
+<img src="http://www.ieeer8.org/wp-content/uploads/2013/09/IEEEmadC_635x200-1.png" width="200"/>
