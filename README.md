@@ -32,3 +32,5 @@ It Will be a great use for students, while listening to lectures they can find c
 * [/source](source/) - Contains the source code of the project
 * [/dist](dist/) - Contains the latest build of the project
 
+#### Known limitation
+Currently the app is in testing phase so the post filtering is turned off. It can be enabled once the app goes on production stage.
