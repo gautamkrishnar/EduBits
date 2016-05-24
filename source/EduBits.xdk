@@ -1,0 +1,387 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "creationData": {
+      "type": "App Designer",
+      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
+      "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
+      "projectGuid": "7a16c3de-14ea-49c3-bce4-ae750c0d2914",
+      "lastModifiedDate": 1464103602060,
+      "creationDate": 1462421634563
+    },
+    "XDK-app-designer": "true",
+    "sourceDirectory": "www",
+    "startFile": "index.html",
+    "projectFiles": {
+      "xdk-publish-meta-data.json": {
+        "settings": {
+          "project": {
+            "XDK-not-deployed": "True"
+          }
+        }
+      }
+    },
+    "projectDirectories": {},
+    "libraries": [],
+    "serviceMethods": [],
+    "cordovaPluginsDirectory": "plugins",
+    "cordovaPlugins": [
+      {
+        "id": "cordova-plugin-statusbar",
+        "name": "StatusBar",
+        "version": "2.1.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-statusbar",
+        "gitref": "",
+        "paramvals": {},
+        "selectedState": "Included",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.0.0",
+        "permissions": {},
+        "description": "Cordova StatusBar Plugin",
+        "data": {},
+        "dependedBy": [],
+        "checksum": "858cc583"
+      },
+      {
+        "id": "cordova-plugin-device",
+        "version": "1.1.1",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-device",
+        "permissions": {},
+        "topLevel": true,
+        "gitref": "",
+        "name": "Device",
+        "description": "Cordova Device Plugin",
+        "checksum": "927290ca"
+      },
+      {
+        "id": "cordova-plugin-splashscreen",
+        "version": "3.2.0",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-splashscreen",
+        "permissions": {},
+        "topLevel": true,
+        "gitref": "",
+        "name": "Splashscreen",
+        "description": "Cordova Splashscreen Plugin",
+        "checksum": "452a4659"
+      }
+    ],
+    "buildConfigurations": {
+      "Android": {
+        "platform_": "android",
+        "runtime_": "Crosswalk with Cordova 3.x",
+        "name_": "Android",
+        "preferences_": {
+          "android-minSdkVersion": "14",
+          "android-targetSdkVersion": "21",
+          "android-installLocation": "preferExternal",
+          "android-signed": true,
+          "Orientation": "portrait"
+        },
+        "isActive_": true,
+        "appName_": "EduBits",
+        "appID_": "gkr.edubitsapp",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "http://*/*",
+            "https://*/*",
+            "tel:*",
+            "sms:*",
+            "mailto:*",
+            "geo:*",
+            "market:*"
+          ],
+          "navigation": [],
+          "properties": {}
+        },
+        "icons_": [
+          {
+            "relPath": "img/36.fw.png",
+            "density": "ldpi",
+            "height": 36,
+            "width": 36
+          },
+          {
+            "relPath": "img/48.fw.png",
+            "density": "mdpi",
+            "height": 48,
+            "width": 48
+          },
+          {
+            "relPath": "img/72.fw.png",
+            "density": "hdpi",
+            "height": 72,
+            "width": 72
+          },
+          {
+            "relPath": "img/96.fw.png",
+            "density": "xhdpi",
+            "height": 96,
+            "width": 96
+          }
+        ],
+        "splashes_": [
+          {
+            "relPath": "img/720sp.fw.png",
+            "density": "xhdpi",
+            "height": 960,
+            "width": 720,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "img/420sp.fw.png",
+            "density": "hdpi",
+            "height": 640,
+            "width": 480,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "img/320sp.fw.png",
+            "density": "ldpi",
+            "height": 426,
+            "width": 320,
+            "orientation": "portrait"
+          }
+        ],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "certificateId_": "XmqiJE4nvEm3Psy9Q7VERQ2",
+        "cordovaCLIVersion_": "5.4.1",
+        "crosswalkVersion_": "16",
+        "appVersion_": "1.0.0",
+        "appAuthor_": "Gautam ktishna R",
+        "appDescription_": "Share your knowledge with edubits",
+        "appVersionCode_": "1"
+      },
+      "iOS": {
+        "platform_": "ios",
+        "runtime_": "Cordova 3.x",
+        "name_": "iOS",
+        "preferences_": {
+          "ios-configuration": "adhoc",
+          "deployment-target": "8.0",
+          "Orientation": "landscape"
+        },
+        "isActive_": true,
+        "appName_": "EduBits",
+        "appID_": "gkr.edubits",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "http://*/*",
+            "https://*/*",
+            "tel:*",
+            "sms:*",
+            "mailto:*",
+            "geo:*",
+            "itms:*",
+            "itms-apps:*"
+          ],
+          "navigation": [],
+          "properties": {}
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "certificateId_": "",
+        "iosProvs_": [],
+        "cordovaCLIVersion_": "5.4.1",
+        "crosswalkVersion_": "16",
+        "appVersion_": "1.0.0",
+        "appAuthor_": "Gautam krishna R",
+        "appDescription_": "Share your knowledge with edubits"
+      },
+      "Windows8": {
+        "platform_": "windows8",
+        "runtime_": "Cordova 3.x",
+        "name_": "Windows8",
+        "preferences_": {
+          "windows-publisher-display-name": "Gautam Krishna R",
+          "windows-publisher-id": "CN-B5521B3B-9AFE-4DD4-BFCB-92E76F02911A",
+          "Orientation": "default",
+          "wp81-publisher-id": "8f4da2cd-9b29-4639-bc9a-1d9c9d63f378"
+        },
+        "isActive_": true,
+        "appName_": "EduBits",
+        "appID_": "gkr.edubits",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": [],
+          "properties": {}
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "certificateId_": "",
+        "cordovaCLIVersion_": "5.4.1",
+        "crosswalkVersion_": "16",
+        "appVersion_": "1.0.0.0",
+        "appAuthor_": "Gautam krishna R",
+        "appDescription_": "Share your knowledge with edubits"
+      },
+      "WebApp": {
+        "platform_": "webapp",
+        "runtime_": "W3C",
+        "name_": "WebApp",
+        "preferences_": {},
+        "isActive_": false,
+        "appName_": "EduBits",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "certificateId_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "Chrome": {
+        "platform_": "chromeos",
+        "runtime_": "W3C on Chrome OS",
+        "name_": "Chrome",
+        "preferences_": {},
+        "isActive_": true,
+        "appName_": "EduBits",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [
+          {
+            "relPath": "img/16.fw.png",
+            "height": 16,
+            "width": 16
+          },
+          {
+            "relPath": "img/128.fw.png",
+            "height": 128,
+            "width": 128
+          }
+        ],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "certificateId_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "1.0.0",
+        "appDescription_": "Share your knowledge with edubits"
+      },
+      "Firefox": {
+        "platform_": "firefoxos",
+        "runtime_": "W3C on Firefox OS",
+        "name_": "Firefox",
+        "preferences_": {},
+        "isActive_": false,
+        "appName_": "EduBits",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "certificateId_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "Facebook": {
+        "platform_": "facebook",
+        "runtime_": "W3C on Facebook",
+        "name_": "Facebook",
+        "preferences_": {},
+        "isActive_": false,
+        "appName_": "EduBits",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "certificateId_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "WP81": {
+        "platform_": "wp81",
+        "runtime_": "Cordova 3.x",
+        "name_": "WP81",
+        "preferences_": {},
+        "isActive_": true,
+        "appName_": "EduBits",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "certificateId_": "",
+        "appVersion_": "0.0.0.1",
+        "cordovaCLIVersion_": "5.4.1",
+        "appAuthor_": "Intel XDK"
+      }
+    },
+    "gameAssetDirectory": "asset",
+    "gameMetadata": {},
+    "projectTags": [],
+    "testDirectory": "test"
+  }
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="cerulean/css/cerulean.min.css" class="uib-framework-theme">
+        <meta charset="UTF-8">
+        <title>Blank App Designer Cordova Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
+  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
+  * For a quick overview of "meta viewport" and @viewport, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
+  * Additional useful references include:
+  *   http://www.quirksmode.org/mobile/viewports.html
+  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
+  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+-->
+
+        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+
+        <!-- Recommended location for your JavaScript libraries -->
+        <!-- These library references (below) are just examples to give you the general idea... -->
+        <!-- <script src="lib/mc/hammer.js"></script> -->
+        <!-- <script src="lib/ft/fastclick.js"></script> -->
+
+        <!--
+  * cordova.js is a phantom lib for "Cordova HTML5 web app," it does nothing in a "Standard HTML5 web app"
+  * Seeing a "Failed to load resource: net::ERR_FILE_NOT_FOUND" message caused by this "cordova.js" script?
+  * The cordova.js script is required if you convert your "Standard HTML5" project into a "Cordova" project.
+  * You can safely ignore the error or comment out this line if you will not be developing a Cordova app.
+-->
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="marginal/marginal-position.min.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
+        <script type="application/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+    </head>
+
+    <body>
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+        <div class="upage" id="mainpage">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_1 uib-header-fixed" data-uib="layout/header" data-ver="0">
+                    <h2>EduBits</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <button class="btn widget uib_w_9 whitetxt headcol headbtnmargin btn-link" data-uib="twitter%20bootstrap/button" data-ver="1" id="headmenu1"><i class="glyphicon glyphicon-th-list" data-position="icon only"></i>
+                        </button>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+
+                <div class="upage-content ac0 content-area vertical-col" id="page_72_61">
+
+                    <div class="grid grid-pad urow uib_row_4 row-height-4" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+
+                    <div class="grid grid-pad urow uib_row_6 row-height-6" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_4 col-0_9-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="table-thing widget uib_w_2 sermargin" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                    <label class="narrow-control" for="searchtxt"></label>
+                                    <input class="wide-control form-control default" type="search" placeholder="Search" id="searchtxt">
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div class="col uib_col_3 col-0_3-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <button class="btn widget uib_w_3 btn-primary" data-uib="twitter%20bootstrap/button" data-ver="1" id="searchbtn"><i class="glyphicon glyphicon-search" data-position="icon only"></i>
+                                </button>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
+
+                <div class="inner-element uib_w_8 uib_sidebar leftbar bar-bg thumb-bg bar-gutter swipe fixed" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}" id="swipebar">
+                    <div class="sidebar-content content-area vertical-col">
+
+                        <div class="grid grid-pad urow uib_row_11 row-height-11" data-uib="layout/row" data-ver="0">
+                            <div class="col uib_col_9 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col center">
+                                    <div class="tarea widget uib_w_29 d-margins" data-uib="media/text" data-ver="0" name="uib_w_29">
+                                        <div class="widget-container left-receptacle"></div>
+                                        <div class="widget-container right-receptacle"></div>
+                                        <div class="text-container" id="usernametext">
+                                            <p>Guest</p>
+                                        </div>
+                                    </div>
+                                    <div class="widget uib_w_30 scale-image d-margins" data-uib="media/img" data-ver="0">
+                                        <figure class="figure-align">
+                                            <img src="img/user.png">
+                                            <figcaption data-position="bottom"></figcaption>
+                                        </figure>
+                                    </div>
+
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                            <span class="uib_shim"></span>
+                        </div>
+
+                        <div class="list-group widget uib_w_11 d-margins" data-uib="twitter%20bootstrap/list_group" data-ver="1" id="swipemenus">
+
+                            <a class="list-group-item allow-badge widget uib_w_12" data-uib="twitter%20bootstrap/list_item" data-ver="1" id="swipehome">
+                                <h4 class="list-group-item-heading">Search</h4>
+
+                            </a>
+                            <a class="list-group-item allow-badge widget uib_w_13" data-uib="twitter%20bootstrap/list_item" data-ver="1" id="swipecategories">
+                                <h4 class="list-group-item-heading">Categories</h4>
+
+                            </a>
+                            <a class="list-group-item allow-badge widget uib_w_49 d-margins" data-uib="twitter%20bootstrap/list_item" data-ver="1" id="swipeabout">
+                                <h4 class="list-group-item-heading">About</h4>
+
+                            </a>
+                            <a class="list-group-item allow-badge widget uib_w_14" data-uib="twitter%20bootstrap/list_item" data-ver="1" id="swipelogin">
+                                <h4 class="list-group-item-heading">Login</h4>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="categories" class="upage-content vertical-col hidden">
+
+                    <div class="list-group widget uib_w_19 d-margins" data-uib="twitter%20bootstrap/list_group" data-ver="1" id="catlist">
+                        <a class="list-group-item allow-badge widget uib_w_20" data-uib="twitter%20bootstrap/list_item" data-ver="1">
+                            <h4 class="list-group-item-heading">Check connection</h4>
+                            <p class="list-group-item-text">Can't connect to server</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="login" class="upage-content vertical-col hidden">
+                    <div class="grid grid-pad urow uib_row_7 row-height-7" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_5 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                    <div class="table-thing widget uib_w_15 centinpbox-marg" data-uib="twitter%20bootstrap/input" data-ver="1">
+                        <label class="narrow-control" for="usn"></label>
+                        <input class="wide-control form-control default" type="text" placeholder="Username" id="usn">
+                    </div>
+                    <div class="table-thing widget uib_w_16 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                        <label class="narrow-control" for="pass"></label>
+                        <input class="wide-control form-control default" type="password" placeholder="Password" id="pass">
+                    </div>
+                    <div class="tarea widget uib_w_21 d-margins" data-uib="media/text" data-ver="0" name="uib_w_21" id="pwdtextw">
+                        &nbsp;
+                    </div>
+
+                    <button class="btn widget uib_w_17 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="loginbtn"><i class="glyphicon glyphicon-user button-icon-left" data-position="left"></i>Login</button>
+                    <button class="btn widget uib_w_18 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="register"><i class="glyphicon glyphicon-plus button-icon-left" data-position="left"></i>Register</button>
+                </div>
+                <div id="searchresults" class="upage-content vertical-col hidden">
+                    <div class="list-group widget uib_w_24 d-margins" data-uib="twitter%20bootstrap/list_group" data-ver="1" id="searchlist">
+                        <a class="list-group-item allow-badge widget uib_w_25" data-uib="twitter%20bootstrap/list_item" data-ver="1">
+                            <h4 class="list-group-item-heading">Check connection</h4>
+                            <p class="list-group-item-text">Can't connect to server</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="categ_res" class="upage-content vertical-col left hidden">
+
+                    <div class="list-group widget uib_w_22 d-margins" data-uib="twitter%20bootstrap/list_group" data-ver="1" id="pagelist">
+                        <a class="list-group-item allow-badge widget uib_w_23" data-uib="twitter%20bootstrap/list_item" data-ver="1">
+
+                            <h4 class="list-group-item-heading">Check connection</h4>
+                            <p class="list-group-item-text">Can't connect to server</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="showsinglebit" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_26 d-margins bititllest" data-uib="media/text" data-ver="0" name="uib_w_26" id="bitdesctxttl">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <h2 style="font-style:italic"><cite><span dir="rtl"><strong>Check connection</strong></span></cite></h2>
+                        </div>
+                    </div>
+                    <div class="tarea widget uib_w_27 d-margins bititllest" data-uib="media/text" data-ver="0" name="uib_w_27" id="bitdesctxt">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p><strong>Cant connect to server...</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <button class="btn widget uib_w_28 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="editbitbtn"><i class="glyphicon glyphicon-pencil button-icon-top" data-position="top"></i>Edit</button>
+                </div>
+                <div id="editbitpage" class="upage-content vertical-col left hidden">
+                    <div class="table-thing widget uib_w_31 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                        <label class="narrow-control label-inline" for="titlebit">Title</label>
+                        <input class="wide-control form-control default" type="text" id="titlebit">
+                    </div>
+                    <div class="table-thing widget uib_w_32 d-margins" data-uib="twitter%20bootstrap/text_area" data-ver="1">
+                        <label class="narrow-control label-top-left">Description</label>
+                        <textarea rows="10" class="wide-control form-control" wrap="soft" id="descbit"></textarea>
+                    </div>
+                    <div class="tarea widget uib_w_33 d-margins" data-uib="media/text" data-ver="0" name="uib_w_33">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container" id="editbiterr">
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="table-thing widget uib_w_35 d-margins" data-uib="twitter%20bootstrap/select" data-ver="1">
+                        <label class="narrow-control label-inline">Category</label>
+                        <select class="wide-control form-control default" id="catedirbill">
+                            <option>Select</option>
+                        </select>
+                    </div>
+                    <button class="btn widget uib_w_34 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="updatebit"><i class="glyphicon glyphicon-ok button-icon-top" data-position="top"></i>Update Bit</button>
+                </div>
+                <div id="addbitpage" class="upage-content vertical-col left hidden">
+                    <div class="table-thing widget uib_w_36 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                        <label class="narrow-control label-inline" for="addbtittl">Title</label>
+                        <input class="wide-control form-control default" type="text" id="addbtittl">
+                    </div>
+                    <div class="table-thing widget uib_w_37 d-margins" data-uib="twitter%20bootstrap/text_area" data-ver="1">
+                        <label class="narrow-control label-top-left">Description</label>
+                        <textarea rows="10" class="wide-control form-control" wrap="soft" id="addbitdesc"></textarea>
+                    </div>
+
+                    <div class="table-thing widget uib_w_38 d-margins" data-uib="twitter%20bootstrap/select" data-ver="1">
+                        <label class="narrow-control label-inline">Category</label>
+                        <select class="wide-control form-control default" id="addbitcat">
+                            <option>Select</option>
+                        </select>
+                    </div>
+                    <div class="tarea widget uib_w_40 d-margins" data-uib="media/text" data-ver="0" name="uib_w_40">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container" id="addbiterrordesc">
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+
+                    <button class="btn widget uib_w_39 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="addbitbtn"><i class="glyphicon glyphicon-edit button-icon-top" data-position="top"></i>Add Bit</button>
+                </div>
+                <div id="errorpage" class="upage-content vertical-col left hidden">
+                    <div class="grid grid-pad urow uib_row_12 row-height-12" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_10 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="grid grid-pad urow uib_row_13 row-height-13" data-uib="layout/row" data-ver="0">
+                                    <div class="col uib_col_11 col-1_12-12" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                    <span class="uib_shim"></span>
+                                </div>
+                                <div class="widget uib_w_54 scale-image d-margins" data-uib="media/img" data-ver="0">
+                                    <figure class="figure-align">
+                                        <img src="img/Warning.png">
+                                        <figcaption data-position="bottom"></figcaption>
+                                    </figure>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                    <div class="tarea widget uib_w_42 d-margins centerall" data-uib="media/text" data-ver="0" name="uib_w_42">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Please check your internet connection!</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="registeruserpage" class="upage-content vertical-col left hidden">
+                    <div class="table-thing widget uib_w_43 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                        <label class="narrow-control label-top-left" for="reg_name">Name</label>
+                        <input class="wide-control form-control default" type="text" id="reg_name">
+                    </div>
+                    <div class="table-thing widget uib_w_46 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                        <label class="narrow-control label-top-left" for="reg_email">e-mail</label>
+                        <input class="wide-control form-control default" type="email" id="reg_email">
+                    </div>
+                    <div class="table-thing widget uib_w_44 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                        <label class="narrow-control label-top-left" for="reg_username">Username</label>
+                        <input class="wide-control form-control default" type="text" id="reg_username">
+                    </div>
+                    <div class="table-thing widget uib_w_45 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                        <label class="narrow-control label-top-left" for="reg_pass">Password</label>
+                        <input class="wide-control form-control default" type="password" id="reg_pass">
+                    </div>
+                    <div class="tarea widget uib_w_47 d-margins" data-uib="media/text" data-ver="0" name="uib_w_47">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p id="regerrorline">&nbsp;</p>
+                        </div>
+                    </div>
+                    <button class="btn widget uib_w_48 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="joinnowbtn"><i class="glyphicon glyphicon-user button-icon-left" data-position="left"></i>Join Now</button>
+                </div>
+                <div id="aboutpage" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_53 d-margins" data-uib="media/text" data-ver="0" name="uib_w_53">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <h2>About EduBits</h2>
+                        </div>
+                    </div>
+
+                    <div class="tarea widget uib_w_51 d-margins" data-uib="media/text" data-ver="0" name="uib_w_51">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>EduBits&nbsp; is a community powered platform to share knowledge it is a mobile application which allows you to search and find&nbsp;the concise definition of anything related to any subject under the globe.&nbsp;Unlike a traditional
+                                website or a search&nbsp;engine, the EduBits will only display&nbsp;&nbsp;&nbsp;&nbsp; the minimal information that a user&nbsp;need to&nbsp;&nbsp; know about the search item.</p>
+
+                            <p>
+                                <br>Edubits is not possible without your help. You can create an account on Edubits and add information about your fevourite topic to edubits.</p>
+
+                            <p>&nbsp;</p>
+
+                            <p>The Edubits app is still under development, morre features like&nbsp;topic images, more info links, topic attribution etc are coming soon...&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="tarea widget uib_w_52 d-margins" data-uib="media/text" data-ver="0" name="uib_w_52">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <blockquote>
+                                <p><strong>"Share your knowledge. It’s a way to achieve immortality</strong>..."</p>
+
+                                <p>-Dalai Lama</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
