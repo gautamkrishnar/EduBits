@@ -4,7 +4,7 @@ EduBits is a community powered platform to share knowledge. It is a mobile appli
 [<img src="http://www.pokemonxandydownload.com/wp-content/uploads/2014/09/download-button.png" width="200px" />](dist/)
 
 #### What makes EduBits Different from search engine or dictionary:
-The EduBits app will not display unwanted information about the search term. It will only display the exactly tablet sized information that a user need to know about a particular search item. It the user want to learn more. he can also do it via EduBits.
+The EduBits app will not display unwanted information about the search term. It will only display the exactly tablet sized information that a user need to know about a particular search item. If the user want to learn more. he can also do it via EduBits.
 
 #### The community
 The contents of EduBits application is created by the community of users around the world. If you have knowledge about a particular term, you can add it to EduBits using our mobile app. You can also edit existing EduBits and make it more concise.
