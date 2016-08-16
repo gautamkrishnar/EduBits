@@ -35,6 +35,7 @@ It Will be a great use for students, while listening to lectures they can find c
 #### Directory structure
 * [/source](source/) - Contains the source code of the project
 * [/dist](dist/) - Contains the latest build of the project
+* [/server](server/) - Contains the edubits server files
 
 #### Known limitation
 Currently the app is in testing phase so the post filtering and reviewing is turned off. That means any newly registered users can login as soon as he is registered, also the new bits will appear on the app as soon as it is posted. The filtering can be enabled once the app goes on production stage the server already have the attributes to support it.
