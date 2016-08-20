@@ -1,0 +1,21 @@
+<?php
+if(isset($_POST['usn'])){$usn=$_POST['usn'];}
+if(isset($_POST['pss'])){$pss=$_POST['pss'];}
+if(isset($_GET['usn'])){$usn=$_GET['usn'];}
+if(isset($_GET['pss'])){$pss=$_GET['pss'];}
+require_once('dbinf.inc.php');
+$query="SELECT * FROM `users` WHERE uname='".$usn."' and password='".$pss."' ";
+$result=$con->query($query);
+if(mysqli_num_rows($result)>0)
+{
+	$row=mysqli_fetch_assoc($result);
+    $arr['key']=1;
+	$arr['user_name']=$row['name'];
+    echo(json_encode($arr));
+}
+else
+{
+    $arr['key']=0;
+    echo(json_encode($arr));
+}
+?>
